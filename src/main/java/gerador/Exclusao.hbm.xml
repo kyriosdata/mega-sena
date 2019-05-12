@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+        
+<hibernate-mapping>
+	<class name="Exclusao" table="EXCLUSOES">
+	
+		<id name="id" column="PK_EXCLUSAO">
+			<generator class="increment"/>
+		</id>
+		
+		<property name="descricao" column="descricao"/>
+		
+		<list name="jogos" 
+		      table="EXCLUSAO_ITEM" 
+		      lazy="true" 
+		      cascade="save-update">
+			<key column="PK_EXCLUSAO"/>
+			<index column="POSICAO"/>
+			<many-to-many class="Jogo" column="PK_JOGO"/>
+		</list>
+		
+	</class>	
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+	<class name="megasena.gerador.Jogo" table="JOGOS">
+	
+		<id name="id">
+			<generator class="increment"/>
+		</id>
+		
+		<property name="d1" column="d1"/>
+		<property name="d2" column="d2"/>
+		<property name="d3" column="d3"/>
+		<property name="d4" column="d4"/>
+		<property name="d5" column="d5"/>
+		<property name="d6" column="d6"/>
+		
+		<property name="ok" column="ok"/>
+
+	</class>	
+</hibernate-mapping>

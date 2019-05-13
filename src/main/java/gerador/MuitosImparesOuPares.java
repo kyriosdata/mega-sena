@@ -1,4 +1,4 @@
-package megasena.gerador;
+package gerador;
 
 public class MuitosImparesOuPares implements Exclusao {
 	public boolean exclui(int jogo, int[] dezenas) {

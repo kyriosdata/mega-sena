@@ -1,4 +1,4 @@
-package megasena.preprocessador;
+package preprocessador;
 
 import java.io.BufferedReader;
 import java.io.File;

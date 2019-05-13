@@ -1,4 +1,4 @@
-package megasena.preprocessador;
+package preprocessador;
 
 import java.util.List;
 

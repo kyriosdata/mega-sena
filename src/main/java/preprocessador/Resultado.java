@@ -1,4 +1,4 @@
-package megasena.preprocessador;
+package preprocessador;
 
 public class Resultado {
 	public int jogo;

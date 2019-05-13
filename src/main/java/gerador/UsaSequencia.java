@@ -1,4 +1,4 @@
-package megasena.gerador;
+package gerador;
 
 /**
  * Toda seqüência gerada pelo Gerador será processada por uma implementação 

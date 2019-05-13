@@ -1,8 +1,7 @@
-package megasena.gerador;
+package gerador;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.Arrays;
 
 /**
  * SOLU��O:

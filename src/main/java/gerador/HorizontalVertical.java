@@ -1,4 +1,4 @@
-package megasena.gerador;
+package gerador;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ import java.util.Arrays;
  * 
  * @author F�bio Nogueira de Lucena
  */
-public class HorizontalVertical implements megasena.gerador.Exclusao {
+public class HorizontalVertical implements Exclusao {
     int[] contador = new int[10];
 
     public int getValorHorizontal(int dezena) {

@@ -1,4 +1,4 @@
-package megasena.gerador;
+package gerador;
 
 
 import java.io.BufferedInputStream;

@@ -1,4 +1,4 @@
-package megasena.gerador;
+package gerador;
 
 
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.Arrays;
  * 
  * @author F�bio Nogueira de Lucena
  */
-public class SerieAritmetica implements megasena.gerador.Exclusao {
+public class SerieAritmetica implements Exclusao {
 	byte[] diferencas = null;
 	
 	public SerieAritmetica() {

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class ProcessaResultados {
-    
+
     public static List<ResultadoMegaSena> getListFromFile(String fileName) {
         List<ResultadoMegaSena> lista = null;
         try {

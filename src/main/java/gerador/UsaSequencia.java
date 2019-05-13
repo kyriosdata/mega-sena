@@ -11,8 +11,7 @@ package gerador;
 /**
  * Toda seqüência gerada pelo Gerador será processada por uma implementação 
  * de UsaSequencia.
- * 
- * @author lucena
+ *
  *
  */
 public interface UsaSequencia {

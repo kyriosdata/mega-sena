@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2018.
+ *
+ * Fábio Nogueira de Lucena
+ * Fábrica de Software - Instituto de Informática (UFG)
+ *
+ */
+
 package preprocessador;
 
 import java.util.List;

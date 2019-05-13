@@ -1,7 +1,11 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Copyright (c) 2018.
+ *
+ * Fábio Nogueira de Lucena
+ * Fábrica de Software - Instituto de Informática (UFG)
+ *
  */
+
 package megasenautils;
 
 /**

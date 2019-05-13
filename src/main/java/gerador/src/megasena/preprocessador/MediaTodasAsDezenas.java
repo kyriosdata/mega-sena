@@ -1,16 +1,15 @@
 package megasena.preprocessador;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class MediaTodasAsDezenas {
 	public static void main(String[] args) throws Exception {
-		List<Resultado> lista = MegaSenaService.montaListaResultados("/tmp/resultados.txt");
+		List<megasena.preprocessador.Resultado> lista = megasena.preprocessador.MegaSenaService.montaListaResultados("/tmp/resultados.txt");
 		double soma = 0d;		
 		double menorMedia = Double.MAX_VALUE;
 		double maiorMedia = Double.MIN_VALUE;
 		
-		for (Resultado resultado : lista) {
+		for (megasena.preprocessador.Resultado resultado : lista) {
 			double somaParcial = 0D;	
 			for (int dezena : resultado.dezenas) {
 				somaParcial += dezena;
@@ -21,7 +20,7 @@ public class MediaTodasAsDezenas {
 		}
 			
 		int contador = 0;
-		for (Resultado resultado : lista) {
+		for (megasena.preprocessador.Resultado resultado : lista) {
 			int pares = 0;
 			int impares = 0;
 			for (int dezena : resultado.dezenas) {
@@ -37,6 +36,6 @@ public class MediaTodasAsDezenas {
 		System.out.println("Resultados com muitos ou poucos pares: " + contador);
 		System.out.printf("Media total: %f", soma / (6.0 * lista.size()));
 		System.out.printf("\nMenor media: %f", menorMedia / 6.0);
-		System.out.printf("\nMaior média: %f", maiorMedia / 6);
+		System.out.printf("\nMaior mï¿½dia: %f", maiorMedia / 6);
 	}
 }

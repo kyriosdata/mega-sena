@@ -29,7 +29,7 @@ public class MegaSenaService {
 	public static final String CAIXA = "file://localhost/home/fabio/kyrios/tools/D_megase.zip";
 
 	/**
-	 * Obtém resultados da caixa e os deposita no arquivo fornecido no formato txt.
+	 * Obtï¿½m resultados da caixa e os deposita no arquivo fornecido no formato txt.
 	 * 
 	 * @param arquivo
 	 * @throws Exception
@@ -65,6 +65,7 @@ public class MegaSenaService {
 				}
 			}
 		}
+
 		PrintWriter pw = new PrintWriter(arquivo);
 		pw.write(sb.toString());
 		pw.close();
@@ -101,12 +102,12 @@ public class MegaSenaService {
 		}
 	}
 
-	public static List<Resultado> montaListaResultados(String arquivo) throws Exception {
-		List<Resultado> lista = new ArrayList<Resultado>();
+	public static List<megasena.preprocessador.Resultado> montaListaResultados(String arquivo) throws Exception {
+		List<megasena.preprocessador.Resultado> lista = new ArrayList<megasena.preprocessador.Resultado>();
 		Scanner sc = new Scanner(new File(arquivo));
-		Resultado resultado = null;
+		megasena.preprocessador.Resultado resultado = null;
 		while (sc.hasNext()) {
-			resultado = new Resultado();
+			resultado = new megasena.preprocessador.Resultado();
 			resultado.jogo = Integer.parseInt(sc.next());
 			sc.next();
 			resultado.dezenas[0] = Integer.parseInt(sc.next());
@@ -131,10 +132,10 @@ public class MegaSenaService {
 	}
 
 	public static void main(String[] args) throws Exception {
-		List<Resultado> lista = montaListaResultados("/tmp/resultados.txt");
+		List<megasena.preprocessador.Resultado> lista = montaListaResultados("/tmp/resultados.txt");
 		System.out.println(lista.size());
 		Map<Integer,Integer> mapa = new HashMap<Integer,Integer>();
-		for (Resultado r : lista) {
+		for (megasena.preprocessador.Resultado r : lista) {
 			acrescentaValor(mapa, r.dezenas[0]);
 			acrescentaValor(mapa, r.dezenas[1]);
 			acrescentaValor(mapa, r.dezenas[2]);

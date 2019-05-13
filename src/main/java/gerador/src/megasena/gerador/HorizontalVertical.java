@@ -3,14 +3,14 @@ package megasena.gerador;
 import java.util.Arrays;
 
 /**
- * Identifica jogo onde há pelo menos quatro dezenas em uma horizontal ou pelo
+ * Identifica jogo onde hï¿½ pelo menos quatro dezenas em uma horizontal ou pelo
  * menos quatro dezenas na vertical. Por exemplo, um jogo com os valores 1, 2, 4
- * e 9 será excluído, pois estas quatro dezenas estão na mesma linha horizontal.
- * A noção de horizontal e vertical é baseada na distribuição dos números na cartela.
+ * e 9 serï¿½ excluï¿½do, pois estas quatro dezenas estï¿½o na mesma linha horizontal.
+ * A noï¿½ï¿½o de horizontal e vertical ï¿½ baseada na distribuiï¿½ï¿½o dos nï¿½meros na cartela.
  * 
- * @author Fábio Nogueira de Lucena
+ * @author Fï¿½bio Nogueira de Lucena
  */
-public class HorizontalVertical implements Exclusao {
+public class HorizontalVertical implements megasena.gerador.Exclusao {
     int[] contador = new int[10];
 
     public int getValorHorizontal(int dezena) {

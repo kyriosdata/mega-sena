@@ -17,7 +17,7 @@ import megasena.ProcessaMegaSenaHTML;
  */
 public class MegaSena implements IProcessaSorteio {
     
-    public void processaSorteio(Sorteio s) {
+    public void processaSorteio(megasena.Sorteio s) {
         System.out.println(s);
     }
     

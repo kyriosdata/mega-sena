@@ -66,8 +66,8 @@ public class ProcessaMegaSenaHTML {
 
     public void adicionaString(String elemento) {
         elementos.add(elemento);
-        if (elementos.size() == Sorteio.NUMERO_ELEMENTOS) {
-            Sorteio s = Sorteio.montaSorteio(elementos);
+        if (elementos.size() == megasena.Sorteio.NUMERO_ELEMENTOS) {
+            megasena.Sorteio s = megasena.Sorteio.montaSorteio(elementos);
             elementos.clear();
             igr.processaSorteio(s);
         }

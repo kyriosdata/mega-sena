@@ -4,12 +4,12 @@ package megasena.gerador;
 import java.util.Arrays;
 
 /**
- * Elimina jogo onde há pelo menos três diferenças entre
- * dezenas consecutivas cujos valores são iguais.
+ * Elimina jogo onde hï¿½ pelo menos trï¿½s diferenï¿½as entre
+ * dezenas consecutivas cujos valores sï¿½o iguais.
  * 
- * @author Fábio Nogueira de Lucena
+ * @author Fï¿½bio Nogueira de Lucena
  */
-public class SerieAritmetica implements Exclusao {
+public class SerieAritmetica implements megasena.gerador.Exclusao {
 	byte[] diferencas = null;
 	
 	public SerieAritmetica() {

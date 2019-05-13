@@ -4,12 +4,12 @@ import java.util.List;
 
 public class MediaTodasAsDezenas {
 	public static void main(String[] args) throws Exception {
-		List<megasena.preprocessador.Resultado> lista = megasena.preprocessador.MegaSenaService.montaListaResultados("/tmp/resultados.txt");
+		List<preprocessador.Resultado> lista = preprocessador.MegaSenaService.montaListaResultados("/tmp/resultados.txt");
 		double soma = 0d;		
 		double menorMedia = Double.MAX_VALUE;
 		double maiorMedia = Double.MIN_VALUE;
 		
-		for (megasena.preprocessador.Resultado resultado : lista) {
+		for (preprocessador.Resultado resultado : lista) {
 			double somaParcial = 0D;	
 			for (int dezena : resultado.dezenas) {
 				somaParcial += dezena;
@@ -20,7 +20,7 @@ public class MediaTodasAsDezenas {
 		}
 			
 		int contador = 0;
-		for (megasena.preprocessador.Resultado resultado : lista) {
+		for (preprocessador.Resultado resultado : lista) {
 			int pares = 0;
 			int impares = 0;
 			for (int dezena : resultado.dezenas) {

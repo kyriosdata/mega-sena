@@ -102,12 +102,12 @@ public class MegaSenaService {
 		}
 	}
 
-	public static List<megasena.preprocessador.Resultado> montaListaResultados(String arquivo) throws Exception {
-		List<megasena.preprocessador.Resultado> lista = new ArrayList<megasena.preprocessador.Resultado>();
+	public static List<preprocessador.Resultado> montaListaResultados(String arquivo) throws Exception {
+		List<preprocessador.Resultado> lista = new ArrayList<preprocessador.Resultado>();
 		Scanner sc = new Scanner(new File(arquivo));
-		megasena.preprocessador.Resultado resultado = null;
+		preprocessador.Resultado resultado = null;
 		while (sc.hasNext()) {
-			resultado = new megasena.preprocessador.Resultado();
+			resultado = new preprocessador.Resultado();
 			resultado.jogo = Integer.parseInt(sc.next());
 			sc.next();
 			resultado.dezenas[0] = Integer.parseInt(sc.next());
@@ -132,10 +132,10 @@ public class MegaSenaService {
 	}
 
 	public static void main(String[] args) throws Exception {
-		List<megasena.preprocessador.Resultado> lista = montaListaResultados("/tmp/resultados.txt");
+		List<preprocessador.Resultado> lista = montaListaResultados("/tmp/resultados.txt");
 		System.out.println(lista.size());
 		Map<Integer,Integer> mapa = new HashMap<Integer,Integer>();
-		for (megasena.preprocessador.Resultado r : lista) {
+		for (preprocessador.Resultado r : lista) {
 			acrescentaValor(mapa, r.dezenas[0]);
 			acrescentaValor(mapa, r.dezenas[1]);
 			acrescentaValor(mapa, r.dezenas[2]);

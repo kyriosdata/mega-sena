@@ -49,6 +49,13 @@ public class Gerador {
 		}, szSeq, szDom);
 	}
 
+	/**
+	 * Cria gerador com sequência definida.
+	 *
+	 * @param us sequência
+	 * @param szSeq
+	 * @param szDom
+	 */
 	public Gerador(UsaSequencia us, int szSeq, int szDom) {
 		super();
 		this.us = us;
@@ -60,15 +67,28 @@ public class Gerador {
 		copiaV = new int[szSeq];
 	}
 
+	/**
+	 * Faz uma cópia do array v para o array copiaV, que é externamente visível.
+	 *
+	 * @return copiaV
+	 */
 	private int[] copiaSequencia() {
 		System.arraycopy(v, 1, copiaV, 0, copiaV.length);
 		return copiaV;
 	}
 
+	/**
+	 * Utiliza o método privado gera para gerar um jogo.
+	 */
 	public void gerador() {
 		gera(1);
 	}
 
+	/**
+	 * Gera um jogo.
+	 *
+	 * @param k número do jogo gerado
+	 */
 	private void gera(int k) {
 		for (v[k] = v[k - 1] + 1; v[k] <= szDom; v[k]++) {
 			if (k == szSeq) {
@@ -80,10 +100,17 @@ public class Gerador {
 		v[k]--;
 	}
 
-	// Versão alternativa para gera que não foi testada
-	// Talvez seja mais legível que a anterior, embora
-	// faça uso de mais memória.
+	/**
+	 * Gera um jogo.
+	 *
+	 * @param k número do jogo gerado
+	 * @param i
+	 * @param f
+	 */
 	private void repita(int k, int i, int f) {
+		// Versão alternativa para gera que não foi testada
+		// Talvez seja mais legível que a anterior, embora
+		// faça uso de mais memória.
 		if (k == 16) {
 			us.usaSequencia(++jogo, copiaSequencia());
 		} else {
@@ -100,8 +127,8 @@ public class Gerador {
 	 * ou o identificador ou a sequência é suficiente para identificar
 	 * seis dezenas.
 	 *
-	 * @param dzns
-	 * @return
+	 * @param dzns dezena
+	 * @return identificador único para a dezena
 	 */
 	public static int dezenas56ParaNumero(int[] dzns) {
 		// Cálculo abaixo gera para jogos no formato (1,2,3,4,d5,d6)
@@ -116,6 +143,11 @@ public class Gerador {
 		return p + d6 - d5;
 	}
 
+	/**
+	 * Método main que faz a execução do metódo gerador.
+	 *
+	 * @param args não utilizado
+	 */
 	public static void main(String[] args) {
 
 		// Exibe todos os jogos possíveis da megasena

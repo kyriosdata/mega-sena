@@ -19,8 +19,7 @@ import megasena.ProcessaMegaSenaHTML;
  * HTML fornecido pela CEF contendo resultados da Mega Sena. Cada
  * resultado (sorteio) � depositado em uma inst�ncia da classe Sorteio
  * e exibido na sa�da padr�o. 
- * 
- * @author Administrator
+ *
  * 
  */
 public class MegaSena implements IProcessaSorteio {

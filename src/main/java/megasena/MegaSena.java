@@ -9,8 +9,8 @@ import megasena.ProcessaMegaSenaHTML;
 /** Esta classe tem como finalidade ilustrar o emprego de 
  * ProcessaMegaSenaHTML, que tem por objetivo processar uma arquivo
  * HTML fornecido pela CEF contendo resultados da Mega Sena. Cada
- * resultado (sorteio) � depositado em uma inst�ncia da classe Sorteio
- * e exibido na sa�da padr�o. 
+ * resultado (sorteio) é depositado em uma instáncia da classe Sorteio
+ * e exibido na saída padrão.
  * 
  * @author Administrator
  * 

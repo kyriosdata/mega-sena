@@ -12,7 +12,9 @@ import java.text.DecimalFormat;
 import java.util.List;
 
 public class Sorteio {
-
+    /**
+     * Quantidade de elementos contidos na lista com os dados de sorteio.
+     */
     public static final int NUMERO_ELEMENTOS = 16;
 
     short numero;
@@ -36,7 +38,12 @@ public class Sorteio {
     String acumulado;
     
     String valorAcumulado;
-    
+
+    /**
+     * Obtem o valor do Sorteio em formato de texto.
+     *
+     * @return o valor do Sorteio em formato de texto.
+     */
     public String toString() {
         DecimalFormat df4 = new DecimalFormat("000");
         DecimalFormat df2 = new DecimalFormat("00");
@@ -51,12 +58,14 @@ public class Sorteio {
 
     
     /**
-     * @param lista Os elementos desta lista s�o fornecidos na mesma ordem
-     *        em que est�o presentes no arquivo HTML disponibilizado pela CEF.
-     *        Caso a ordem seja alterada, o c�digo deste m�todo tamb�m ter�
+     * Monta o Soteio com base na lista fornecida pela CEF.
+     *
+     * @param lista Os elementos desta lista são fornecidos na mesma ordem
+     *        em que estão presentes no arquivo HTML disponibilizado pela CEF.
+     *        Caso a ordem seja alterada, o código deste método também terá
      *        que ser alterado.
-     * @return null caso a lista n�o possua elementos suficientes para a constru��o 
-     *         de uma inst�ncia de Sorteio, ou a inst�ncia desejada.
+     * @return null, caso a lista não possua elementos suficientes para a
+     *         construção de uma instância de Sorteio, ou a instância desejada.
      */
     public static Sorteio montaSorteio(List lista) {
         if (lista.size() < NUMERO_ELEMENTOS) { 
@@ -89,159 +98,198 @@ public class Sorteio {
     }
 
     /**
-     * @return Returns the data.
+     * Obtém o valor de data.
+     *
+     * @return Retorna a data.
      */
     public String getData() {
         return data;
     }
 
     /**
-     * @param data
-     *            The data to set.
+     * Substitui o valor de data.
+     *
+     * @param data Data a ser inserida.
      */
     public void setData(String data) {
         this.data = data;
     }
 
     /**
-     * @return Returns the dezenas.
+     * Obtém o valor de dezenas.
+     *
+     * @return Retorna as dezenas.
      */
     public byte[] getDezenas() {
         return dezenas;
     }
 
     /**
-     * @param dezenas
-     *            The dezenas to set.
+     * Substitui o valor de dezenas.
+     *
+     * @param dezenas As dezenas a serem inseridas.
      */
     public void setDezenas(byte[] dezenas) {
         this.dezenas = dezenas;
     }
 
     /**
-     * @return Returns the numero.
+     * Obtém o valor de numero.
+     *
+     * @return Retorna o numero.
      */
     public short getNumero() {
         return numero;
     }
 
     /**
-     * @param numero
-     *            The numero to set.
+     * Substitui o valor de número.
+     *
+     * @param numero O número a ser inserido.
      */
     public void setNumero(short numero) {
         this.numero = numero;
     }
 
     /**
-     * @return Returns the quadra.
+     * Obtém o valor de quadra.
+     *
+     * @return Retorna a quadra.
      */
     public int getQuadra() {
         return quadra;
     }
 
     /**
-     * @param quadra
-     *            The quadra to set.
+     * Substitui o valor de quadra.
+     *
+     * @param quadra Quadra a ser inserida.
      */
     public void setQuadra(int quadra) {
         this.quadra = quadra;
     }
 
     /**
-     * @return Returns the quina.
+     * Obtém o valor de quina.
+     *
+     * @return Retorna a quina.
      */
     public int getQuina() {
         return quina;
     }
 
     /**
-     * @param quina
-     *            The quina to set.
+     * Substitui o valor de quina.
+     *
+     * @param quina A quina a ser inserida.
      */
     public void setQuina(int quina) {
         this.quina = quina;
     }
 
     /**
-     * @return Returns the sena.
+     * Obtém o valor de sena.
+     *
+     * @return Retorna a sena.
      */
     public int getSena() {
         return sena;
     }
 
     /**
-     * @param sena
-     *            The sena to set.
+     * Substitui o valor de sena.
+     *
+     * @param sena O novo valor de sena.
      */
     public void setSena(int sena) {
         this.sena = sena;
     }
 
     /**
-     * @return Returns the vQuadra.
+     * Obtém o valor de vQuadra.
+     *
+     * @return Retorna a vQuadra.
      */
     public String getVQuadra() {
         return vQuadra;
     }
 
     /**
-     * @param quadra
-     *            The vQuadra to set.
+     * Substitui o valor de vQuadra.
+     *
+     * @param quadra O novo valor de quadra.
      */
     public void setVQuadra(String quadra) {
         vQuadra = quadra;
     }
 
     /**
-     * @return Returns the vQuina.
+     * Obtém o valor de vQuina.
+     *
+     * @return Retorna a vQuina.
      */
     public String getVQuina() {
         return vQuina;
     }
 
     /**
-     * @param quina
-     *            The vQuina to set.
+     * Substitui o valor de vQuina.
+     *
+     * @param quina O novo valor de vQuina.
      */
     public void setVQuina(String quina) {
         vQuina = quina;
     }
 
     /**
-     * @return Returns the vSena.
+     * Obtém o valor de vSena.
+     *
+     * @return Retorna a vSena.
      */
     public String getVSena() {
         return vSena;
     }
 
     /**
-     * @param sena
-     *            The vSena to set.
+     * Substitui o valor de vSena.
+     *
+     * @param sena O novo valor de vSena.
      */
     public void setVSena(String sena) {
         vSena = sena;
     }
+
     /**
-     * @return Returns the acumulado.
+     * Obtém o Acumulado.
+     *
+     * @return Retorna o acumulado.
      */
     public String getAcumulado() {
         return acumulado;
     }
+
     /**
-     * @param acumulado The acumulado to set.
+     * Substitui o valor de Acumulado.
+     *
+     * @param acumulado O novo valor de acumulado.
      */
     public void setAcumulado(String acumulado) {
         this.acumulado = acumulado;
     }
+
     /**
-     * @return Returns the valorAcumulado.
+     * Obtém o Valor Acumulado.
+     *
+     * @return Retorna o valor Acumulado.
      */
     public String getValorAcumulado() {
         return valorAcumulado;
     }
+
     /**
-     * @param valorAcumulado The valorAcumulado to set.
+     * Substitui o Valor Acumulado.
+     *
+     * @param valorAcumulado O novo valor Acumulado.
      */
     public void setValorAcumulado(String valorAcumulado) {
         this.valorAcumulado = valorAcumulado;

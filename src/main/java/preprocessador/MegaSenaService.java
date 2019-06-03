@@ -37,7 +37,7 @@ public class MegaSenaService {
 	public static final String CAIXA = "file://localhost/home/fabio/kyrios/tools/D_megase.zip";
 
 	/**
-	 * Obt�m resultados da caixa e os deposita no arquivo fornecido no formato txt.
+	 * Obtém resultados da caixa e os deposita no arquivo fornecido no formato txt.
 	 * 
 	 * @param arquivo
 	 * @throws Exception

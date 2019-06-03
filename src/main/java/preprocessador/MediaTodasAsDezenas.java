@@ -44,6 +44,6 @@ public class MediaTodasAsDezenas {
 		System.out.println("Resultados com muitos ou poucos pares: " + contador);
 		System.out.printf("Media total: %f", soma / (6.0 * lista.size()));
 		System.out.printf("\nMenor media: %f", menorMedia / 6.0);
-		System.out.printf("\nMaior m�dia: %f", maiorMedia / 6);
+		System.out.printf("\nMaior média: %f", maiorMedia / 6);
 	}
 }

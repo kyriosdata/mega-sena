@@ -1,16 +1,16 @@
 Eliminacoes:
 
 
-1. Jogo que apresenta s�rie aritm�tica envolvendo pelo menos 4 dezenas.
-2. Jogo que possui tr�s n�meros consecutivos
-3. Jogo onde a menor dezena � 31
-4. Jogo onde a maior dezena � 30
+1. Jogo que apresenta série aritmética envolvendo pelo menos 4 dezenas.
+2. Jogo que possui três números consecutivos
+3. Jogo onde a menor dezena é 31
+4. Jogo onde a maior dezena é 30
 5. Jogo onde todas as dezenas estao em uma coluna
 6. Jogo onde todas as dezenas estao em uma linha
-7. Jogo onde todas as dezenas s�o n�meros pares.
-8. Jogo onde todas as dezenas est�o situadas na metada esquerda 
+7. Jogo onde todas as dezenas são números pares.
+8. Jogo onde todas as dezenas estão situadas na metada esquerda
    da cartela, ou seja, todas elas terminam em 1, 2, 3, 4 ou 5.
-9. Jogo onde todas as dezenas n�o incluem nenhuma das dezenas do item
+9. Jogo onde todas as dezenas não incluem nenhuma das dezenas do item
    anterior, ou seja, a metade direita da cartela. 
 10. Triangulos removidos: (XXX Ha mais combinacoes envolvendo dezenas
       do que aquelas abaixo e que tambem formam triangulos)
@@ -39,7 +39,7 @@ Eliminacoes:
       d4-d3=10 and d5-d4=1
       d5-d4=10 and d6-d5=1
       
-11. Serie aritmetica de 3 numeros "consecutivos"
+11. Série aritmética de 3 números "consecutivos"
      (1,2,3)
      (1,2,4)
      (1,2,5)

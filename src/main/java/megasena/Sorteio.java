@@ -90,7 +90,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de data.
+     * Obtém o valor de data.
      *
      * @return Retorna a data.
      */
@@ -108,7 +108,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de dezenas.
+     * Obtém o valor de dezenas.
      *
      * @return Retorna as dezenas.
      */
@@ -126,7 +126,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de numero.
+     * Obtém o valor de numero.
      *
      * @return Retorna o numero.
      */
@@ -144,7 +144,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de quadra.
+     * Obtém o valor de quadra.
      *
      * @return Retorna a quadra.
      */
@@ -162,7 +162,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de quina.
+     * Obtém o valor de quina.
      *
      * @return Retorna a quina.
      */
@@ -180,7 +180,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de sena.
+     * Obtém o valor de sena.
      *
      * @return Retorna a sena.
      */
@@ -198,7 +198,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de vQuadra.
+     * Obtém o valor de vQuadra.
      *
      * @return Retorna a vQuadra.
      */
@@ -216,7 +216,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de vQuina.
+     * Obtém o valor de vQuina.
      *
      * @return Retorna a vQuina.
      */
@@ -234,7 +234,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de vSena.
+     * Obtém o valor de vSena.
      *
      * @return Retorna a vSena.
      */
@@ -252,7 +252,7 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de acumulado.
+     * Obtém o Acumulado.
      *
      * @return Retorna o acumulado.
      */
@@ -261,7 +261,7 @@ public class Sorteio {
     }
 
     /**
-     * Substitui o valor de acumulado.
+     * Substitui o valor de Acumulado.
      *
      * @param acumulado O novo valor de acumulado.
      */
@@ -270,18 +270,18 @@ public class Sorteio {
     }
 
     /**
-     * Obtem o valor de valorAcumulado.
+     * Obtém o Valor Acumulado.
      *
-     * @return Retorna o valorAcumulado.
+     * @return Retorna o valor Acumulado.
      */
     public String getValorAcumulado() {
         return valorAcumulado;
     }
 
     /**
-     * Substitui o valor de valorAcumulado.
+     * Substitui o Valor Acumulado.
      *
-     * @param valorAcumulado O novo valor de valorAcumulado.
+     * @param valorAcumulado O novo valor Acumulado.
      */
     public void setValorAcumulado(String valorAcumulado) {
         this.valorAcumulado = valorAcumulado;

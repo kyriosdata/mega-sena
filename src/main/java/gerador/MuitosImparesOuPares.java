@@ -12,13 +12,13 @@ package gerador;
  * ser eliminado ou nao.
 */
 public class MuitosImparesOuPares implements Exclusao {
-	/**
+    /**
 	 * Descobre se o jogo deve ser eliminado/desqualificado
-	 * @param jogo O jogo de megasena a ser identificado
+     * @param jogo O jogo de megasena a ser identificado
      * @param dezenas As dezenas do jogo onde serao identificado os pares
      * @return Retorna verdadeiro se o jogo tiver muitos impares ou muitos pares,
      * ou seja, se tem >= 5 pares ou impares, ou falso se não satisfazer isso.
-	*/
+    */
 	public boolean exclui(int jogo, int[] dezenas) {
 		int pares = 0;
 		for (int dezena : dezenas) {

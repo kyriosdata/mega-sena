@@ -12,10 +12,10 @@ package gerador;
 import java.util.Arrays;
 
 /**
- * Elimina jogo onde h� pelo menos tr�s diferen�as entre
- * dezenas consecutivas cujos valores s�o iguais.
+ * Elimina jogo onde há pelo menos três diferenças entre
+ * dezenas consecutivas cujos valores são iguais.
  * 
- * @author F�bio Nogueira de Lucena
+ * @author Fábio Nogueira de Lucena
  */
 public class SerieAritmetica implements Exclusao {
 	byte[] diferencas = null;

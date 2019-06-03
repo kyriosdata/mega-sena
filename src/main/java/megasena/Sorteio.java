@@ -51,12 +51,12 @@ public class Sorteio {
 
     
     /**
-     * @param lista Os elementos desta lista s�o fornecidos na mesma ordem
-     *        em que est�o presentes no arquivo HTML disponibilizado pela CEF.
-     *        Caso a ordem seja alterada, o c�digo deste m�todo tamb�m ter�
+     * @param lista Os elementos desta lista são fornecidos na mesma ordem
+     *        em que estão presentes no arquivo HTML disponibilizado pela CEF.
+     *        Caso a ordem seja alterada, o código deste método também terá
      *        que ser alterado.
-     * @return null caso a lista n�o possua elementos suficientes para a constru��o 
-     *         de uma inst�ncia de Sorteio, ou a inst�ncia desejada.
+     * @return null caso a lista não possua elementos suficientes para a construção
+     *         de uma instância de Sorteio, ou a instância desejada.
      */
     public static Sorteio montaSorteio(List lista) {
         if (lista.size() < NUMERO_ELEMENTOS) { 

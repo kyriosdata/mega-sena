@@ -17,7 +17,7 @@ package gerador;
 public interface UsaSequencia {
 
     /**
-     * Força uma classe que implementar UsaSequencia a ter este método
+     * Força a classe que implementar UsaSequencia a ter este método
      *
      * @param jogo
      * @param dzs

@@ -9,11 +9,17 @@
 package gerador;
 
 /**
- * Toda seqüência gerada pelo Gerador será processada por uma implementação 
- * de UsaSequencia.
+ * Toda sequência gerada pelo Gerador será processada por uma implementação de
+ * UsaSequencia.
  *
  *
  */
 public interface UsaSequencia {
+
+    /**
+     *
+     * @param jogo
+     * @param dzs
+     */
     public void usaSequencia(int jogo, int[] dzs);
 }

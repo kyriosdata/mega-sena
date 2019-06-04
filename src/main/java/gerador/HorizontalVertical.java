@@ -20,7 +20,13 @@ import java.util.Arrays;
  */
 public class HorizontalVertical implements Exclusao {
     int[] contador = new int[10];
-
+    /**
+     * Método que recebe como parâmetro uma dezena e retorna o valor horizontal.
+     * 
+     * @param dezena Dezena recebida para obter valor horizontal.
+     * 
+     * @return Retorna valor horizontal.
+     */
     public int getValorHorizontal(int dezena) {
         if (dezena % 10 == 0) {
             return dezena / 10 - 1;
@@ -29,6 +35,16 @@ public class HorizontalVertical implements Exclusao {
         }
     }
 
+    /**
+     * Método que analisa as dezenas de um jogo, confere se possui mais de quatro
+     * dezenas na horizontal ou vertical, e se possuir, o jogo será excluído.
+     * 
+     * @param jogo Jogo que será analisado.
+     * @param dezenas Dezenas do jogo que serão avaliadas.
+     * 
+     * @return Retorna {@code true} caso o jogo deva ser excluído,
+     * e retorna {@code false} caso o jogo não deva ser excluído.
+     */
     public boolean exclui(int jogo, int[] dezenas) {
         
         // Analisa vertical

@@ -11,12 +11,12 @@ package gerador;
 import java.util.Arrays;
 
 /**
- * Identifica jogo onde h� pelo menos quatro dezenas em uma horizontal ou pelo
+ * Identifica jogo onde há pelo menos quatro dezenas em uma horizontal ou pelo
  * menos quatro dezenas na vertical. Por exemplo, um jogo com os valores 1, 2, 4
- * e 9 ser� exclu�do, pois estas quatro dezenas est�o na mesma linha horizontal.
- * A no��o de horizontal e vertical � baseada na distribui��o dos n�meros na cartela.
+ * e 9 será excluído, pois estas quatro dezenas estão na mesma linha horizontal.
+ * A noção de horizontal e vertical é baseada na distribuição dos números na cartela.
  * 
- * @author F�bio Nogueira de Lucena
+ * @author Fábio Nogueira de Lucena
  */
 public class HorizontalVertical implements Exclusao {
     int[] contador = new int[10];

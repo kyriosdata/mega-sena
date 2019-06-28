@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipInputStream;
+import megasenautils.CaixaEconomica;
 
 /**
  * Obtém resultados da mega sena de CAIXA (constante) e gera arquivo
@@ -29,16 +30,12 @@ import java.util.zip.ZipInputStream;
  * 
  */
 public class kymega {
-	public static final String CAIXA3 = "http://www1.caixa.gov.br/loterias/_arquivos/loterias/D_megase.zip";
 
-	public static final String CAIXA2 = "file://localhost/c:/tmp/D_megase.zip";
-
-	public static final String CAIXA = "file://localhost/home/fabio/kyrios/tools/D_megase.zip";
 
 	public static String getResultadosComoString() {
 		ZipInputStream zis = null;
 		try {
-			URL url = new URL(CAIXA3);
+			URL url = new URL(CaixaEconomica.MEGA_SENA);
 			zis = new ZipInputStream(url.openStream());
 			zis.getNextEntry(); // Vai para D_MEGA.HTM
 		} catch (IOException e) {

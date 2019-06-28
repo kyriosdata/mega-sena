@@ -20,15 +20,12 @@ package megasenautils;
  */
 public class InterfaceUsuario {
 
-    static final String SRV = "http://www1.caixa.gov.br";
-    static String endereco = SRV + "/loterias/_arquivos/loterias/D_megase.zip";
-
     public static void main(String[] args) {
         if (args.length != 0) {
-            endereco = args[0];
+            CaixaEconomica.MEGA_SENA = args[0];
         }
 
-        int retorno = NetUtils.percorreUrl(endereco);
+        int retorno = NetUtils.percorreUrl(CaixaEconomica.MEGA_SENA);
         if (retorno == 1) {
             System.out.println("URL invalida. Verifique o formato...");
         } else if (retorno == 2) {

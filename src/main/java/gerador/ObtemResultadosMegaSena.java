@@ -11,10 +11,9 @@ package gerador;
 import java.io.IOException;
 import java.net.URL;
 import java.util.zip.ZipInputStream;
+import megasenautils.CaixaEconomica;
 
 public class ObtemResultadosMegaSena {
-	final static String URL = "http://www1.caixa.gov" +
-			".br/loterias/_arquivos/loterias/D_megase.zip";
 	
 	public static ZipInputStream zipInputStream(String url) throws IOException {
 		URL refUrl = new URL(url);
@@ -22,6 +21,6 @@ public class ObtemResultadosMegaSena {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		System.out.println(zipInputStream(URL) != null ? "OK" : "ERRO");
+		System.out.println(zipInputStream(CaixaEconomica.MEGA_SENA) != null ? "OK" : "ERRO");
 	}
 }

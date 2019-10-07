@@ -39,6 +39,15 @@ public class Aposta {
     }
 
     /**
+     * Verifica se o número faz parte da aposta.
+     * @param numero O número.
+     * @return {@code true} se e somente se a aposta inclui o número fornecido.
+     */
+    public boolean contem(Numero numero) {
+        return numeros.contains(numero);
+    }
+
+    /**
      * Assegura criação paulatina e correta de uma instância de Aposta.
      */
     public static class Builder {

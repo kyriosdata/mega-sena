@@ -1,5 +1,6 @@
 package megasena;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.Set;
@@ -47,14 +48,18 @@ public class Aposta {
         /**
          * Adiciona um número à aposta em construção.
          * @param numero O número.
+         * @param outros Demais números (se for o caso).
          * @return A instância do próprio "builder".
          */
-        public Builder adiciona(final Numero numero) {
-            if (numeros.size() == MAXIMO_NUMEROS) {
+        public Builder adiciona(final Numero numero, final Numero... outros) {
+            final int estaChamada = outros.length + 1;
+            final int totalPretendido = numeros.size() + estaChamada;
+            if (totalPretendido > MAXIMO_NUMEROS) {
                 throw new IllegalArgumentException("no máximo 15 números");
             }
 
             numeros.add(numero);
+            numeros.addAll(Arrays.asList(outros));
             return this;
         }
 

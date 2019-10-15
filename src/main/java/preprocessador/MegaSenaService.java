@@ -28,13 +28,9 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipInputStream;
+import megasenautils.CaixaEconomica;
 
 public class MegaSenaService {
-	public static final String CAIXA3 = "http://www1.caixa.gov.br/loterias/_arquivos/loterias/D_megase.zip";
-
-	public static final String CAIXA2 = "file://localhost/c:/tmp/D_megase.zip";
-
-	public static final String CAIXA = "file://localhost/home/fabio/kyrios/tools/D_megase.zip";
 
 	/**
 	 * Obt�m resultados da caixa e os deposita no arquivo fornecido no formato txt.
@@ -45,7 +41,7 @@ public class MegaSenaService {
 	public static void persisteResultadosEm(String arquivo) throws Exception {
 		ZipInputStream zis = null;
 		try {
-			URL url = new URL(CAIXA3);
+			URL url = new URL(CaixaEconomica.MEGA_SENA);
 			zis = new ZipInputStream(url.openStream());
 			zis.getNextEntry(); // Vai para D_MEGA.HTM
 		} catch (IOException e) {

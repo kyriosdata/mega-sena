@@ -21,6 +21,8 @@ import java.util.Locale;
 
 public class ProcessaResultados {
 
+    final static String CAMINHO_LISTA = "/home/fabio/kyrios/tools/resultados.ser";
+
     public static List<ResultadoMegaSena> getListFromFile(String fileName) {
         List<ResultadoMegaSena> lista = null;
         try {
@@ -43,7 +45,7 @@ public class ProcessaResultados {
     }
     
     public static void main(String[] args) {
-        List<ResultadoMegaSena> lista = getListFromFile("/home/fabio/kyrios/tools/resultados.ser");
+        List<ResultadoMegaSena> lista = getListFromFile(CAMINHO_LISTA);
         float[] premios = new float[lista.size()];
         int i = -1;
         for (ResultadoMegaSena r : lista) {
